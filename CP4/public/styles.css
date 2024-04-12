@@ -1,0 +1,86 @@
+/*
+Author: Yunha Jo
+CS 132 Spring 2023
+Date: June 4th, 2023
+This is the styles.css page for index.html, notes website.
+*/
+
+main, #notes-section {
+    display: flex;
+}
+
+h1, h2, h3, h4, p {
+    padding: 0px;
+}
+
+h1, input[type="title"], input[type="data"], input[type="note"], #notes-section > div {
+    margin: 10px;
+}
+
+main {
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 150px;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+input[type="title"], input[type="data"], input[type="note"] {
+    height: 50px;
+}
+
+input[type="title"], input[type="data"] {
+    inline-size: 100px;
+    width: 100px;
+}
+
+input[type="note"] {
+    width: 500px;
+}
+
+#notes-section {
+    width: 80%;
+    border: #000000 1px solid;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+#notes-section > div {
+    height: 180px;
+    width: 150px;
+    border: black 1px solid;
+    padding: 5px;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 0px;
+}
+
+h4, p {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+h3, p {
+    font-family: 'Merriweather', serif;
+}
+
+h4 {
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: gray;
+}
+
+p {
+    font-size: 15px;
+}

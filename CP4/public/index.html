@@ -1,0 +1,54 @@
+<!--
+Author: Yunha Jo
+CS 132 Spring 2023
+Date: June 4, 2023
+This is the index.html page for Notes website - a website you can 
+add, edit, and delete notes
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Permanent+Marker&family=Raleway&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <script src = "helpers.js"></script>
+    <script defer src="note.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Notes</h1>
+        </header>
+        <div id = "add-notes">
+            <h2>Fill in the blacks to add a note!</h2>
+            <form> 
+                <input type="title" name="add-title" placeholder="Add a title">
+                <input type="date" name="add-date" placeholder="enter a date">
+                <input type="note" name="add-note" placeholder="Make a note to yourself">
+                <button type="button" id="add-button">Add</button>
+            </form>
+            <h2>Delete a note with its title</h2>
+            <form> 
+                <input type="title" name="del-title" placeholder="Title of note">
+                <button type="button" id="del-button">Delete</button>
+            </form>
+            <h2>Edit a note</h2>
+            <form > 
+                <input type="title" name="edit-title" placeholder="Title of note">
+                <input type="date" name="edit-date" placeholder="enter new date">
+                <input type="note" name="edit-note" placeholder="What do you want to change the note to?">
+                <button type="button" id="edit-button">Edit</button>
+            </form>
+            <h3 id = "err">Message: </h3>
+        </div>
+        <h2>Here are your notes!</h2>
+        <h3 id = "titles"></h3>
+        <button type="button" id="title-button">Click here to get all the titles</button>
+        <div id = "notes-section"> 
+        </div>
+    </main>
+</body>

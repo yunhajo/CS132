@@ -1,0 +1,155 @@
+/*
+Author: Yunha Jo
+CS 132 Spring 2023
+Date: May 6th, 2023
+This is the styles.css page for index.html, Match the Cards game.
+Includes styles for different screens for the game.
+*/
+
+button, h1, #game-screen > h2, #rule-screen h2, #details-bar > h3, #details-bar > p, .win-screen h1, .lose-screen h1 {
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+body, select, button {
+    text-align: center;
+}
+
+h1, #game-screen > h2, #rule-screen h2 {
+    color: #EDE3E9;
+}
+
+#details-bar, #board, button, select {
+    background-color: white;
+}
+
+#rule-screen h2, #details-bar > h3, #details-bar > p {
+    margin: 0;
+}
+
+#rule-screen > p, #details-bar > h3, #details-bar > p {
+    padding: 10px;
+}
+
+.win-screen, .lose-screen, #rule-screen > p {
+    background-color: #EDE3E9;
+}
+
+#game-screen, #details-bar, #board {
+    display: flex;
+}
+
+#details-bar, #board {
+    border: 5pt solid black;
+}
+
+#details-bar > h3, #details-bar > p {
+    font-size: 30pt;
+}
+
+#board, .win-screen, .lose-screen {
+    width: 500px;
+}
+
+.card, .front {
+    position: relative;
+}
+
+.front, .back {
+    top: 0;
+    left: 0;
+}
+
+.back {
+    position: absolute
+}
+
+select {
+    font-size: 12pt;
+    font-family: Helvetica, Verdana, sans-serif;
+  }
+
+button {
+    font-size: 15pt;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+button, select {
+    padding: 8px;
+    border: 2pt solid black;
+  }
+  
+body {
+    width: 80%;
+    margin: auto;
+    background-color: #827081;
+}
+
+h1 {
+    font-size: 100pt;
+}
+
+
+#rule-screen h2 {
+    font-size: 100px;
+}
+
+#rule-screen > p {
+    line-height: 1.8;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+#game-screen {
+    align-items: center;
+    flex-direction: column;
+}
+
+select {
+    margin-bottom: 10px;
+}
+
+#details-bar {
+    width: 1000px;
+    height: 70px;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 1%;
+    margin-top: 20px;
+    padding: 0;
+}
+
+
+
+#board {
+    flex-wrap: wrap;
+    height: 700px;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.card > img {
+    height: 150px;
+    width: 105px;
+    margin: 5px;
+    border: solid black 1pt;
+}
+
+.hidden, #game-screen.hidden, #home-screen.hidden, #board.hidden {
+    display: none;
+}
+
+.card.flipped {
+    visibility: hidden;
+}
+
+.win-screen, .lose-screen {
+    margin: 50px;
+    height: 500px;
+}
+
+.win-screen h1, .lose-screen h1 {
+    color: black;
+    font-size: 50pt;
+}

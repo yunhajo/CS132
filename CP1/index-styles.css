@@ -1,0 +1,32 @@
+/*
+ * Author: Yunha Jo
+ * CS 132 Spring 2022
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Open+Sans&display=swap');
+
+body {
+    background-color: #af9ae1;
+    height: 100vh;
+  }
+
+aside {
+	padding: 10px;
+	margin-right: 10px;
+}
+
+section {
+    background-color: #EDE3E9;
+}
+
+header,footer {
+    background-color: #7D7ABC;
+}
+
+article {
+	background-color: #ccb7ff; 
+}
+
+aside{
+    background-color: #A7A5C6 ;
+}

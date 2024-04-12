@@ -1,0 +1,96 @@
+/*
+  NAME: Yunha Jo
+  DATE: May 13th, 2023
+
+  INSERT 2-3 SENTENCE DESCRIPTION OF FILE HERE
+ */
+
+body, button, select, input {
+  text-align: center;
+  font-size: 12pt;
+  font-family: Helvetica, Verdana, sans-serif;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+button, select {
+  padding: 8px;
+  background-color: white;
+  border: 2pt solid black;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 16pt;
+}
+
+#start-btn {
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#menu-view > article {
+  background-color: #6F77ED;
+  border-radius: 0.35em;
+  border: 5pt solid black;
+}
+
+.hidden, .hide-img > img {
+  display: none;
+}
+
+#menu-view > article, #details-bar {
+  color: white;
+}
+
+#details-bar, .card, #board {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#details-bar, .card {
+  align-items: center;
+}
+
+#details-bar {
+  background-color: black;
+  font-size: 14pt;
+  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+}
+
+.card {
+  width: 220px;
+  height: 95px;
+  border: solid black 0.35em;
+  border-radius: 1em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.card > img {
+  height: 85%;
+}
+
+.selected {
+  box-shadow: 6px 6px #636363;
+}
+
+#board {
+  border-left: 5pt solid black;
+  border-right: 5pt solid black;
+  border-bottom: 5pt solid black;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card > p {
+  font-size: 16pt;
+  font-weight: bold;
+  text-align: center;
+}

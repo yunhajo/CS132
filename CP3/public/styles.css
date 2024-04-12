@@ -1,0 +1,120 @@
+/*
+Author: Yunha Jo
+CS 132 Spring 2023
+Date: May 20th, 2023
+This is the styles.css page for index.html, News article recommnedation page.
+*/
+
+button, h1 {
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+body, select, button {
+    text-align: center;
+}
+
+main, #board {
+    padding: 10px;
+}
+
+div > a, h1 {
+    color: black;
+}
+
+h1, h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#rec-screen, #buttons, #board, #board > div{
+    display: flex;
+}
+
+#rec-screen, #board, #board > div {
+    flex-direction: column;
+    border: solid black 1px;
+}
+
+#board, #rec-screen {
+    align-items: center;
+}
+
+#board, #buttons {
+    margin: 20px;
+}
+
+div > a, #home-page p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div > h3, div > p {
+    font-family: 'Merriweather', serif;
+}
+
+div > h3, #home-page p {
+    font-size: 15pt;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 150pt;
+    padding: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h2 {
+    color: #223843;
+    font-size: 50px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+body {
+    padding-bottom: 50px;
+}
+
+#rec-screen.hidden, #home-page.hidden {
+    display: none;
+}
+
+#buttons {
+    flex-direction: row;
+}
+
+button {
+    margin: 10px;
+}
+
+#board {
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+#board > div {
+    padding: 5px;
+    width: 900px;
+}
+
+div > a {
+    font-size: 30pt;
+}
+
+div > h3 {
+    color: #595959;
+    
+}
+
+div > p {
+    font-size: 15pt;
+}
+
+#home-page p {
+    color: #153243;
+}
+
+div > img {
+    height: auto;
+    max-width: 300px; 
+    max-height: 300px;
+    float: right;
+}

@@ -1,0 +1,80 @@
+<!--
+Author: Yunha Jo
+CS 132 Spring 2023
+Date: May 20th, 2023
+This is the index.html file for new article recommendations.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Permanent+Marker&family=Raleway&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src = "helpers.js"></script>
+    <script defer src="newsRec.js"></script>
+</head>
+<body>
+    <main>
+        <section id="home-page">
+        <h1>Daily News</h1>
+          <article>
+            <h2>Personalized news recommendation page. You can choose to look at top news
+              for the day or look for news of your own interest.
+            </h2>
+            <p>Enter topic or keyword of interest</p>
+            <form>
+              <label>Keyword:</label>
+              <input type="text" name="name" value="" class="input">
+            </form>
+            <button id="rec-btn-keyword">Recommend!</button>
+            <p>Choose a country or category of interest to get the top news</p>
+            <form>
+              <select name = "country" id = "country">
+                <option value="ca">Canada</option>
+                <option value="cn">China</option>
+                <option value="us" selected>United Statetes</option>
+                <option value="gb">United Kingdom</option>
+                <option value="au">Australia</option>
+                <option value="gb">United Kingdom</option>
+                <option value="kr">South Korea</option>
+                <option value="jp">Japan</option>
+                <option value="fr">France</option>
+                <option value="de">Germany</option>
+                <option value="nl">Netherlands</option>
+                <option value="mx">Mexico</option>
+                <option value="ch">Switzerland</option>
+                <option value="ae">United Arab Emirates</option>
+              </select>
+              <select name = "category" id = "category">
+                <option value="business">Business</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="general" selected>General</option>
+                <option value="health">Health</option>
+                <option value="science">Science</option>
+                <option value="sports">Sports</option>
+                <option value="technology">Technology</option>
+              </select>
+            </form>
+            <button id="rec-btn-select">Recommend!</button>
+          </article>
+        </section>
+  
+        <section id="rec-screen" class="hidden">
+          <h2>Here's what we found</h2>
+          <div id="board"></div>
+          <div id="buttons">
+            <button id="back-btn">Back to Main</button>
+          </div>
+        </section>
+
+      </main>
+      <footer>
+        <p>Explore <a href="https://newsapi.org/">API</a> for the website</p>
+        <p>Source code taken from slide 34 of Lecture 12</p>
+      </footer>
+</body>
+</html>
